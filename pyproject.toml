@@ -1,0 +1,15 @@
+[project]
+name = "netdash"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "app"}
+
+[tool.setuptools.packages.find]
+where = ["app"]
+
+[project.scripts]
+netdash = "netdash.cli:main"
+
